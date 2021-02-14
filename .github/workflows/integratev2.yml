@@ -1,18 +1,20 @@
-name: CI push
+name: CI NodeFinal
 on:
   push:
-    branches: [ feature/server ]
+    branches: [ develop ]
 jobs:
-  echo:
+  run_tests:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./server/src
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with: 
           node-version: 14
-      - run: cd server
-      - run: cd src
       - run: npm install
-      - run: npm run test
+        working-directory: ${{ env.working-directory }}
+      - run: npm test
+        working-directory: ${{ env.working-directory }}
 
       
