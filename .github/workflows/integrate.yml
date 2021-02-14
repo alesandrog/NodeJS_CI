@@ -1,15 +1,18 @@
 name: CI node2
 on:
   pull_request:
-    branches: [ develop ]
+    branches:
+    - develop
 jobs:
   ci_to_develop:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@server
       - uses: actions/setup-node@v1
         with: 
-          node-version: 12
+          node-version: 14
+      - run: cd server
+      - run: cd src
       - run: npm ci
       - run: npm run test
 
