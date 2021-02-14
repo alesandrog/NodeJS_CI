@@ -10,5 +10,7 @@ jobs:
       - uses: actions/setup-node@v1
         with: 
           node-version: 14
+      - run: cd server
+      - run: cd src
       - run: npm install
       - run: npm run test
