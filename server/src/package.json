@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "\"mocha test/app_test.js\" ",
+    "test": "mocha test/app_test.js",
     "test2": " \"mocha test/app_test.js\" "
   },
   "author": "",
