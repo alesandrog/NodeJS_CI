@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 **/node_modules/*
+=======
+  
+**/node_modules/*
+
+./other
+>>>>>>> release/1.0.0
