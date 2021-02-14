@@ -7,13 +7,13 @@ jobs:
   ci_to_develop:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@server
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with: 
           node-version: 14
       - run: cd server
       - run: cd src
-      - run: npm ci
+      - run: npm install
       - run: npm run test
 
       
