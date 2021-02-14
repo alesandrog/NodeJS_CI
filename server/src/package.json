@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon --exec \"mocha test/app_test.js min\" ",
-    "test2": "nodemon --exec \"mocha test/app_test.js min\" "
+    "test": "\"mocha test/app_test.js min\" ",
+    "test2": " \"mocha test/app_test.js min\" "
   },
   "author": "",
   "license": "ISC",
