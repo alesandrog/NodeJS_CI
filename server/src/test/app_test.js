@@ -36,7 +36,7 @@ describe("Unit tests to API", () => {
             })
     });
 
-    it('Receive response from test', (done) =>{
+    it('Receive response from test should fail', (done) =>{
         request(app)
             .get('/api/test')
             .expect(200)
@@ -47,6 +47,3 @@ describe("Unit tests to API", () => {
             })
     });
 })
-
-
-
