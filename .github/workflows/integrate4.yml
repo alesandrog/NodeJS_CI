@@ -2,7 +2,7 @@ name: Hello World push
 
 on:
   push:
-    branches: [ feature/server ]
+    branches: [ develop ]
 
 jobs:
   echo:
