@@ -40,7 +40,7 @@ describe("Unit tests to API", () => {
         request(app)
             .get('/api/test')
             .expect(200)
-            .expect("Response from test!")
+            .expect("Response from test")
             .end((err)=>{
                 if (err) return done(err);
                 done();
